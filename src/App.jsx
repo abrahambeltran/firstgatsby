@@ -5,8 +5,9 @@ import About from './components/about/About'
 import Experience from './components/experience/Experience'
 import Contacts from './components/contacts/Contacts'
 import Footer from './components/footer/Footer'
+import Sidebar from './components/sidebar/Sidebar'
 
-const App = () => {
+const App = (props, state) => {
   return (
     <>
         <Header />
@@ -15,6 +16,7 @@ const App = () => {
         <Experience />
         <Contacts />
         <Footer />
+        <Sidebar />
     </>
   )
 }
