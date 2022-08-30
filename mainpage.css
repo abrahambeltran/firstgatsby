@@ -1,0 +1,235 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+html{
+    background-color: #051622;
+    
+}
+
+.header{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    padding: 0px 50px;
+    width: 96%;
+    z-index: 11;
+    height: 100px;
+    display: flex;
+    backdrop-filter: blur(10px);
+}
+
+.navStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 12;
+}
+
+.mainLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding: 5px;
+    flex-shrink: 0;
+    color: #1BA098;
+}
+
+.navOptions{
+    display:flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.navOptions ul {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navOptions li{
+    margin: 0px 5px;
+    position: relative;
+    font-size: 13px;
+}
+
+.navOptions button{
+    color: green;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.leftNav{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #1BA098;
+    
+}
+
+.leftNav ul{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+.leftNav li{
+    display: list-item;
+}
+.leftNav li a{
+    padding: 10px;
+}
+.leftNav li a i{
+    width: 20px;
+    height: 20px;
+}
+
+.leftNav::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #1BA098;
+    z-index: 10;
+}
+
+.bodyText{
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 100px;
+    margin: 0px auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 0px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.bodyText h1{
+    font-size: clamp(40px, 8vw, 80px);
+    flex-shrink: 1;
+    margin: 0px;
+    font-weight: 600;
+    color:#DEB992;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+.bodyText h2{
+    font-size: clamp(40px, 8vw, 80px);
+    flex-shrink: 1;
+    margin: 0px;
+    font-weight: 600;
+    color:#DEB992;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+
+.bodyText h4{
+    font-weight: 400;
+    font-size: clamp(14px, 5vw, 16px);
+    color:#DEB992;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+.bodyText p{
+    margin: 20px 0px 0px;
+    max-width: 540px;
+    color:#DEB992;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
+}
+
+.bodyText button{
+    background-color: transparent;
+    border: 1px solid #1BA098;
+    border-radius: 13px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
+    color:#DEB992;
+}
+
