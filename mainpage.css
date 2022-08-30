@@ -38,7 +38,6 @@ html{
 
 .header{
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -49,6 +48,7 @@ html{
     height: 100px;
     display: flex;
     backdrop-filter: blur(10px);
+    opacity: 50%;
 }
 
 .navStyle{
